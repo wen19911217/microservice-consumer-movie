@@ -16,7 +16,7 @@ public class MovieController {
 
     @Value("${user.userServiceUrl}")
     private  String userServiceUrl;
-    private  int a = 0;
+    private  int b = 0;
     @GetMapping("/user/{id}")
     public User findByUser(@PathVariable Long id){
 
