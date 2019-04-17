@@ -16,9 +16,11 @@ public class MovieController {
 
     @Value("${user.userServiceUrl}")
     private  String userServiceUrl;
-
+    private  int a = 0;
     @GetMapping("/user/{id}")
     public User findByUser(@PathVariable Long id){
+
          return this.restTemplate.getForObject(this.userServiceUrl+id,User.class);
+
     }
 }
