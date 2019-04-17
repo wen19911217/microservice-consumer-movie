@@ -8,6 +8,7 @@ public class User {
     private  String name ;
     private Integer age;
     private BigDecimal balance;
+    private  int test = 0;
 
     public Long getId() {
         return id;
@@ -47,5 +48,16 @@ public class User {
 
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", balance=" + balance +
+                '}';
     }
 }
